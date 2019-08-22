@@ -1,0 +1,161 @@
+@import "variables"
+.launch
+	width: 75%
+	margin: 0 auto  
+	hr
+		display: inline-block
+		width: 35%
+		margin: 5px 10px
+		border-top: 2px solid #e5e5e5	   
+	
+	.title
+		margin: 25px auto
+		opacity: 0.75
+		color: #000000
+		font-size: 26px
+		font-weight: 300
+		line-height: 24px
+		letter-spacing: 5.2px
+		z-index: 1      
+	
+	.lanc
+		margin-top: 10px
+		width: 30%
+		margin-left: 2.5%
+		float: left
+		background: #fff
+		position: relative
+		
+		.promotion
+			width: 56px
+			height: 56px
+			opacity: 0.8
+			background: #000
+			text-align: center
+			position: absolute
+			top: 20px
+			right: 28%            
+			
+			span
+				width: 34px
+				height: 25px
+				color: $primary-color
+				font-family: "Open Sans - Extrabold"
+				font-size: 17px
+				font-weight: 400
+				line-height: 12.96px
+				text-transform: uppercase
+				font-family: "Open Sans Extrabold"
+				font-weight: 700
+				letter-spacing: -1.2px    
+				
+				b
+					font-family: "Open Sans - Semibold"
+					font-size: 13px
+					font-weight: 600
+					letter-spacing: -0.9px                        
+		.espiar
+			display: none
+			width: 200px
+			height: 40px
+			opacity: 0.8
+			background: #000
+			text-align: center
+			cursor: pointer
+			z-index: unset
+			position: absolute
+			top: 34%
+			left: 50%
+			margin-right: -50%
+			transform: translate(-50%, -50%)            	
+			span
+				width: 67px
+				height: 11px
+				color: $primary-color
+				font-family: Georgia
+				font-size: 16px
+				font-weight: 400
+				line-height: 21px
+				text-transform: uppercase
+				letter-spacing: 1.6px  
+				z-index: unset                 	
+				img
+					display: inherit
+					margin-top: 10px	
+		img.ads
+			margin: 0 auto
+			margin-top: 20px
+			display: block
+			max-height: 250px
+			&:hover
+				opacity: 0.4
+				~.espiar
+					display: block
+		.desc
+			position: inherit
+			display: inline-block  
+			.text
+				color: $font_color_2
+				font-family: Georgia
+				font-size: 14px
+				font-weight: 400
+				line-height: 21px
+				letter-spacing: 2.8px      
+				width: 100%
+				padding: 10px 100px
+				text-align: center               
+			
+			.prices
+				text-align: center
+				margin-top: 0px              
+				.old,.new
+					padding: 10px auto
+					margin-left: 20px                    
+				
+				.old
+					width: 216px
+					height: 16px
+					color: #000000
+					font-size: 14px
+					font-weight: 400
+					line-height: 21px
+					text-transform: uppercase
+					color: $font_color_2
+					letter-spacing: 1.4px
+					text-decoration: line-through
+				
+				.new
+					letter-spacing: 1.6px
+					font-family: "Open Sans - Semibold"
+					font-size: 18px
+					font-weight: 600
+					letter-spacing: 1.8px
+				 
+				.condition
+					width: 100%
+					display: inline-block
+					color: $font_color_2
+					font-size: 12px
+					font-weight: 400
+					line-height: 21px
+					letter-spacing: 1.2px    
+								
+				a.btn
+					text-align: center
+					display: inline-block
+					background: $primary-color
+					color: #ffffff
+					font-family: Georgia
+					font-size: 16px
+					font-weight: 400
+					line-height: 21px
+					letter-spacing: 1.6px
+					padding: 20px
+					margin-top: 7px
+					width: 190px
+
+	h2
+		text-align: center
+		text-transform: uppercase
+		font-size: 26px
+		color: #fff 

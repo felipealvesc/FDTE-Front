@@ -1,0 +1,118 @@
+@import 'variables'
+.content-cabecalho
+	background-color: $primary_color 
+	.cabecalho
+		width: 75%
+		margin: 0 auto
+		text-align: right
+		font-size: 12px
+		a:nth-child(0n+1)
+			margin-right: 30px
+		a
+			font-size: 12px
+			line-height: 24px
+			color: #676767
+			text-transform: uppercase
+
+.sub-cabecalho
+	margin: 0 auto
+	margin-top: 30px
+	.search
+		padding: 5px	
+	.busca
+		min-width: 245px
+		input[type=text]
+			height: 40px
+			outline: none
+			width: 200px
+			color: $font_color_1
+			border-bottom: 2px solid #cccccc	
+		img
+			top: 7px
+			right: 50px
+			position: relative
+	.logo
+		text-align: center			
+	.list
+		text-transform: uppercase
+		ul
+			display: flex
+			justify-content: flex-end
+			li
+				display: flex
+				font-size: 12px
+				align-items: center
+				margin: 0 0 0 20px
+				a
+					color: $font_color_2
+					display: flex
+					align-items: center
+					white-space: nowrap
+					img
+						margin: 0 5px
+nav
+	margin: 40px 0px 15px 0px
+	.menu
+		display: flex
+		margin: 0 auto
+		justify-content: space-between
+		width: 50%
+		text-align: center
+		align-items: center
+		li
+			position: relative
+			padding: 5px	
+			a
+				font-family: Georgia
+				font-size: 15px
+				font-weight: 400
+				line-height: 24px
+				letter-spacing: 1.5px
+				text-transform: uppercase
+				color: $font_color_2	
+				&:hover,&:active
+					color: $primary-color
+					letter-spacing: 1.5px
+					border: 2px 0px
+					border-bottom: 1px solid $primary-color
+					border-top: 1px solid $primary-color
+
+			ul
+				display: none
+				background: #fff
+				border: solid 1px #676767
+				position: absolute
+				z-index: 99
+				text-align: left
+				width: 180px
+				top: 34px
+				left: 0
+				padding: 25px 15px
+				li
+					border-bottom: solid 1px $font_color_1
+					padding-bottom: 10px
+					a
+						font-family: sans-serif
+						text-transform: none
+						color: $font_color_2
+					&:hover
+						a
+							color: $font_color_2
+							&:hover
+								color: $primary-color
+								border: none
+
+					&:last-of-type
+						border-bottom: none
+
+		.drop-down
+			&:hover
+				background: $primary-color
+				color: #fff
+				a
+					color: $font_color_2	
+				.drop-down-menu
+					display: block
+
+										
+	

@@ -1,0 +1,73 @@
+@import "variables"
+.carrinho
+	position: relative
+	&:hover
+		background-color: $primary-color
+	.content-carrinho
+		display: none
+		position: absolute
+		top: 25px
+		right: -110px
+		z-index: 9999999
+		border: solid 1px #d2d2d2
+		background: #fff
+		text-transform: uppercase
+		min-width: 320px
+		font-weight: bold
+		.carrinho-intens
+			display: flex
+			border-bottom: solid 1px #d2d2d2
+			padding: 10px
+			figure
+				max-width: 90px
+				width: 100%
+				padding-right: 10px
+				img
+					width: 100%
+			.content-infos
+				font-size: 14px
+				margin-bottom: 5px
+				p
+					color: $font_color_2
+				p:nth-child(0n+1)
+					color: $font_color_1
+			.cod-product
+				font-size: 11px
+				margin-bottom: 5px
+			.cod-product-infos
+				display: flex
+				justify-content: space-between
+				font-size: 11px
+				white-space: nowrap
+				span
+					margin: 10px 0
+					color: $font_color_1
+		.qtd-itens
+			padding: 10px
+			background: #f2f2f2
+			display: flex
+			justify-content: space-between
+			span
+				letter-spacing: 1.3px
+			span:nth-child(0n+1)
+				color: $font_color_1		
+		.final-compras
+			display: flex
+			justify-content: space-between
+			padding: 10px
+			a
+				letter-spacing: 1.3px
+			.continue-comprando
+				padding: 10px 20px
+				text-decoration: underline
+				margin: 5px
+				white-space: normal
+				text-align: center
+				color: $font_color_2
+			.finalizar-compras
+				padding: 10px 20px
+				background: $primary-color
+				margin: 5px
+				white-space: normal
+				text-align: center
+				color: #fff
